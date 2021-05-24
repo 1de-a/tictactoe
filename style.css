@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
+body {
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Mansalva', cursive;
+  
+}
+
+footer {
+	
+	text-align: center;
+	font-size: 1rem;
+	bottom: 0;
+	position:fixed;
+	width: 100%;
+}
+
+header {
+	text-align: center;
+	font-size: 3rem;
+	padding: 4rem;
+}
+
+.main-container {
+
+	margin: auto;
+	border: 2px solid rgb(0, 0, 0);
+	height: 60vw;
+	width: 60vw;
+	display: grid;
+	grid-template: 20vw / auto auto auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+	
+}
+
+#startGame {
+
+	padding: 0.6rem;
+	margin: auto;
+	margin-top: 2rem;
+	display: flex;
+ 	justify-content: center;
+    align-items: center;
+	border: 1px solid black; 
+	border-radius: 10px;
+	font-family: 'Mansalva', cursive;
+
+}
+
+#startGame:hover {
+
+	color: white;
+	background-color: black;
+}
