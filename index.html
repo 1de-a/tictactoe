@@ -14,10 +14,35 @@
 </head>
 <body>
 	<header>Tic-Tac-Toe</header>
+	<p id="turn">A Simple Tic-Tac-Toe Game</p>
 	
 <div class="main-container" id="main-container">
+	<div class="box" id="0" onclick="play(this.id)"></div>
+	<div class="box" id="1" onclick="play(this.id)"></div>
+	<div class="box" id="2" onclick="play(this.id)"></div>
+	<div class="box" id="3" onclick="play(this.id)"></div>
+	<div class="box" id="4" onclick="play(this.id)"></div>
+	<div class="box" id="5" onclick="play(this.id)"></div>
+	<div class="box" id="6" onclick="play(this.id)"></div>
+	<div class="box" id="7" onclick="play(this.id)"></div>
+	<div class="box" id="8" onclick="play(this.id)"></div>
 </div>
-<button id="startGame">Start Game</button>
+
+<div id="pregameContainer">
+	<div>	<input type="text" placeholder="Player 1" id="player1Name">
+		<input type="radio" name="mark" id="mark" value="X">
+		<label for="X">X</label>
+		<input type="radio" name="mark" id="mark" value="O">
+		<label for="O">O</label>
+	</div>
+<div>	<input type="text" placeholder="Player 2" id="player2Name">
+		<input type="checkbox" id="computerPlay">Play Against Computer
+	
+</div>
+
+</div>
+
+<button id="startGame" onclick="startGame()">Start Game</button>
 
 <footer>
     <p>Tic-Tac-Toe by 1de-a</p>

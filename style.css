@@ -11,7 +11,7 @@ body {
 footer {
 	
 	text-align: center;
-	font-size: 1rem;
+	font-size: 15px;
 	bottom: 0;
 	position:fixed;
 	width: 100%;
@@ -19,18 +19,23 @@ footer {
 
 header {
 	text-align: center;
-	font-size: 3rem;
-	padding: 4rem;
+	font-size: 40px;
+	padding-top: 40px;
 }
 
-.main-container {
+#turn {
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+#main-container {
 
 	margin: auto;
-	border: 2px solid rgb(0, 0, 0);
-	height: 60vw;
-	width: 60vw;
+	height: 50%;
+	width: 50%;
 	display: grid;
-	grid-template: 20vw / auto auto auto;
+	grid-template: 150px / auto auto auto;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -38,11 +43,35 @@ header {
 	
 }
 
+.box {
+	border: 1px solid black;
+	height: 150px;
+	width: 150px;
+	font-size: 120px;
+	text-align: center;
+	
+}
+
+.box:hover {
+
+	box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
+}
+
+.box:active {
+
+	box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
+	-webkit-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
+	-moz-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
+}
+
 #startGame {
 
-	padding: 0.6rem;
+	padding: 15px;
 	margin: auto;
-	margin-top: 2rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	display: flex;
  	justify-content: center;
     align-items: center;
@@ -56,4 +85,37 @@ header {
 
 	color: white;
 	background-color: black;
+}
+
+
+
+#pregameContainer {
+
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	height: 80px;
+	display: grid;
+	grid-template: 40px / auto;
+	justify-content: center;
+	align-items: center;
+	grid-gap:10px;
+}
+
+#player1Name {
+	font-family: 'Mansalva', cursive;
+
+}
+
+#player2Name {
+	font-family: 'Mansalva', cursive;
+}
+
+label {
+	font-size: 25px;
+}
+
+input {
+
+	font-size: 20px;
 }
