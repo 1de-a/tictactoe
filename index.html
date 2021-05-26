@@ -15,27 +15,33 @@
 <body>
 	<header>Tic-Tac-Toe</header>
 	<p id="turn">A Simple Tic-Tac-Toe Game</p>
+	<div id="restart" style="visibility: hidden;">
+		<p>Game Over</p>
+		<p id="winner">Player 1 Won!</p>
+		<button id="playAgain" onclick="playAgain()">Play Again</button>
+
+	</div>
 	
 <div class="main-container" id="main-container">
-	<div class="box" id="0" onclick="play(this.id)"></div>
-	<div class="box" id="1" onclick="play(this.id)"></div>
-	<div class="box" id="2" onclick="play(this.id)"></div>
-	<div class="box" id="3" onclick="play(this.id)"></div>
-	<div class="box" id="4" onclick="play(this.id)"></div>
-	<div class="box" id="5" onclick="play(this.id)"></div>
-	<div class="box" id="6" onclick="play(this.id)"></div>
-	<div class="box" id="7" onclick="play(this.id)"></div>
-	<div class="box" id="8" onclick="play(this.id)"></div>
+	<div class="box box1" id="0" onclick="play(this.id)"></div>
+	<div class="box box2" id="1" onclick="play(this.id)"></div>
+	<div class="box box3" id="2" onclick="play(this.id)"></div>
+	<div class="box box4" id="3" onclick="play(this.id)"></div>
+	<div class="box box5" id="4" onclick="play(this.id)"></div>
+	<div class="box box6" id="5" onclick="play(this.id)"></div>
+	<div class="box box7" id="6" onclick="play(this.id)"></div>
+	<div class="box box8" id="7" onclick="play(this.id)"></div>
+	<div class="box box9" id="8" onclick="play(this.id)"></div>
 </div>
 
 <div id="pregameContainer">
-	<div>	<input type="text" placeholder="Player 1" id="player1Name">
+	<div>	<input type="text" placeholder="Player 1" size="15" maxlength="12" id="player1Name">
 		<input type="radio" name="mark" id="mark" value="X">
 		<label for="X">X</label>
 		<input type="radio" name="mark" id="mark" value="O">
 		<label for="O">O</label>
 	</div>
-<div>	<input type="text" placeholder="Player 2" id="player2Name">
+<div>	<input type="text" placeholder="Player 2" size="15" maxlength="12" id="player2Name">
 		<input type="checkbox" id="computerPlay">Play Against Computer
 	
 </div>

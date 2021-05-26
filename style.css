@@ -43,8 +43,52 @@ header {
 	
 }
 
+.box1{
+	
+	
+}
+
+.box2{
+	
+	border-left: 2px ridge black;
+	border-right: 2px ridge black;
+}
+
+.box3{
+	
+}
+
+.box4{
+	border-top: 2px ridge black;
+	border-bottom: 2px ridge black;
+	
+}
+.box5{
+	
+	border: 2px ridge black;
+	
+}
+.box6{
+	border-top: 2px ridge black;
+	border-bottom: 2px ridge black;
+	
+}
+.box7{
+	
+
+}
+.box8{
+	border-right: 2px ridge black;
+	border-left: 2px ridge black;
+
+}
+.box9{
+	
+
+}
+
 .box {
-	border: 1px solid black;
+	
 	height: 150px;
 	width: 150px;
 	font-size: 120px;
@@ -118,4 +162,37 @@ label {
 input {
 
 	font-size: 20px;
+}
+
+#restart {
+
+color: rgb(251, 255, 34);
+text-align: center;
+position:absolute;
+width: 100%;
+top: 65vh;
+background-color: rgb(99, 99, 99);
+font-size: 35px;
+z-index: 1;
+}
+
+#playAgain {
+
+	padding: 15px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+ 	justify-content: center;
+    align-items: center;
+	border: 1px solid black; 
+	border-radius: 10px;
+	font-family: 'Mansalva', cursive;
+
+}
+
+#playAgain:hover {
+
+	color: white;
+	background-color: black;
 }
