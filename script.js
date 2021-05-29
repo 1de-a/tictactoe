@@ -40,7 +40,12 @@ function startGame() {
   document.getElementById("pregameContainer").style.visibility = "hidden";
   document.getElementById("startGame").style.visibility = "hidden";
 
-  //if (document.getElementById("computerPlay").checked) { computerplay() };
+  if (document.getElementById("computerPlay").checked) {
+      for (let t=0;t<9;t++) {
+    document.getElementById(t).setAttribute("onclick", "computerPlay(this.id)");
+    if(players[1].playerName==""){players[1].playerName="Stupid Pc";};
+
+  }}
 
 
 
@@ -173,3 +178,40 @@ function playAgain() {
 
   location.reload()
 }
+
+//function for playing against computer
+
+function computerPlay(a) {
+
+  document.getElementById(a).innerHTML = players[0].playerMark;
+
+      gameBoard[Number(a)] = players[0].playerMark;
+
+      para.innerText = players[1].playerName + "'s turn!";
+
+      winGame1(a);
+      draw();
+
+      document.getElementById(a).setAttribute("onclick", "");
+
+      setTimeout(pcP,500);
+
+      function pcP(){
+
+        if (document.getElementById("restart").style.visibility != "visible"){
+
+      let pcRoll = Math.floor(Math.random() * 9 );
+
+      if (table3.indexOf(2)>=0){let place = table3.indexOf(2)}
+
+      if(gameBoard[pcRoll]==undefined) {gameBoard[pcRoll]=players[1].playerMark;
+
+      document.getElementById(pcRoll).innerHTML = players[1].playerMark;
+
+      para.innerText = players[0].playerName + "'s turn!";
+
+      document.getElementById(pcRoll).setAttribute("onclick", "");
+
+      winGame2(pcRoll);
+      draw();
+}  else {pcP()}}}}
